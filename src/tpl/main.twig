@@ -1,0 +1,32 @@
+{% extends '/tpl/inc/page.twig' %}
+{% block content %}
+    <div class="main">
+        <div class="main__left"></div>
+        <div class="main__inner">
+            <div class="main__header">
+                Рабочий стол руководителя
+            </div>
+            <section class="btns-block">
+                <button class="button button--gray">Dashboard</button>
+                <button class="button button--white ml-20">Team line up</button>
+            </section>
+            <section class="vocation">
+                <div class="vocation__header">
+                    <span class="vocation__header-name">
+                        График отпусков
+                    </span>
+                    <div class="vocation__year">
+                        <span class="vocation__year-arrow vocation__year-left">
+                            {% include 'tpl/inc/svg/ic-left.svg' %}
+                        </span>
+                        2020
+                        <span class="vocation__year-arrow vocation__year-right">
+                            {% include 'tpl/inc/svg/ic-right.svg' %}
+                        </span>
+                    </div>
+                </div>
+                <div id="app"></div>
+            </section>
+        </div>
+    </div>
+{% endblock %}
